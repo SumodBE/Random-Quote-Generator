@@ -21,7 +21,7 @@ function hideLoadingSpinner() {
 async function getQuote() {
     showLoadingSpinner();
     const proxy = 'https://cors-anywhere.herokuapp.com/';
-    const apiURL = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
+    const apiURL = 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
     try {
         const response = await fetch(proxy + apiURL);
         const data = await response.json();
